@@ -29,7 +29,7 @@ pipeline {
     stage('Prepare Environment'){
       steps {
         sh 'doctl kubernetes cluster kubeconfig save 689501a5-76c6-4ce8-b5ed-2e4e9e67369a'
-        sh 'wget -O - https://github.com/digitalocean/doctl/releases/download/v1.70.0/doctl-1.70.0-linux-amd64.tar.gz | tar xvzf - -C /usr/local/bin'
+        sh 'wget -O - https://github.com/digitalocean/doctl/releases/download/v1.70.0/doctl-1.70.0-linux-amd64.tar.gz | tar xvzf - -C /usr/bin'
         sh 'wget -O $(which sops) https://github.com/mozilla/sops/releases/download/v3.7.1/sops-v3.7.1.linux'
         sh 'apk add gnupg'
         sh 'kubectl cluster-info > /dev/null'

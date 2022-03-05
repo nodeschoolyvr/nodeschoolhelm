@@ -17,6 +17,7 @@ pipeline {
   }
 
   environment {
+    HOME="/tmp/somewhere"
     DIGITALOCEAN_ACCESS_TOKEN = credentials('halkeye-digitalocean')
     PGP_PRIVATE_KEY = credentials('jenkins-gpg-secret')
     GPG_TRUST = credentials('jenkins-gpg-ownertrust')

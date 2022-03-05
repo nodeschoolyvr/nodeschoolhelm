@@ -1,0 +1,8 @@
+issuerRef:
+  kind: ClusterIssuer
+  name: letsencrypt
+dnsNames:
+  - '*.do.nodeschoolyvr.com'
+commonName: '*.do.nodeschoolyvr.com'
+secretName: wildcard-tls
+

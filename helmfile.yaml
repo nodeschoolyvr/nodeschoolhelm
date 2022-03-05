@@ -1,0 +1,8 @@
+helmDefaults:
+  kubeContext: do-tor1-k8s-nodeschool
+  #cleanupOnFail: true
+  #wait: true
+  #timeout: 300
+  #atomic: true
+helmfiles:
+  - namespaces/*/helmfile.yaml

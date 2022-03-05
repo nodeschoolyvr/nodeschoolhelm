@@ -1,0 +1,13 @@
+helmDefaults:
+  kubeContext: do-tor1-k8s-nodeschool
+
+repositories:
+  - name: jupyterhub
+    url: https://jupyterhub.github.io/helm-chart/
+
+releases:
+  - name: jupyterhub
+    chart: jupyterhub/jupyterhub
+    namespace: jupyterhub
+    values:
+      - jupyterhub.yaml

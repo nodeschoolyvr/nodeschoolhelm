@@ -1,0 +1,35 @@
+metrics:
+  enabled: true
+rbac:
+  create: true
+controller:
+  ingressClassResource:
+    default: true
+
+  extraArgs:
+    default-ssl-certificate: "kube-system/wildcard-tls"
+
+  stats:
+    enabled: true
+
+  metrics:
+    enabled: true
+    port: 10254
+
+    #kind: "DaemonSet"
+
+  config:
+    use-forwarded-headers: "true"
+    use-proxy-protocol: "true"
+
+  service:
+    type: LoadBalancer
+    externalTrafficPolicy: Local
+    publishService:
+      enabled: "true"
+    annotations:
+      external-dns.alpha.kubernetes.io/hostname: "do.nodeschoolyvr.com."
+      "service.beta.kubernetes.io/do-loadbalancer-enable-proxy-protocol": "true"
+      #"service.beta.kubernetes.io/do-loadbalancer-hostname": "do.nodeschoolyvr.com"
+      prometheus.io/scrape: "true"
+      prometheus.io/port: "10254"

@@ -16,10 +16,6 @@ proxy:
     # the user-specific prefixes and thinks "it runs by itself"
     extraCommandLineFlags:
     - "--no-include-prefix"
-  # secret token
-  # same as hub.config.ConfigurableHTTPProxy.auth_token
-  # result of `openssl rand -hex 32`
-  secretToken: 8fd3f6b47a260e7fc53e4e10cd6361ff332edfbadafbcf6dd5a51652dc55b882 
 
 hub:
   # The code-server needs different arguments

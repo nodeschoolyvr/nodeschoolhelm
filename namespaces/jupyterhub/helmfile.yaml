@@ -11,3 +11,5 @@ releases:
     namespace: jupyterhub
     values:
       - jupyterhub.yaml
+    secrets:
+      - jupyterhub-secrets.yaml

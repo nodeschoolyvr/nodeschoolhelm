@@ -24,4 +24,4 @@ EOF
 
 echo $SCRIPT
 
-kubectl --context do-k8s exec -n databases postgresql-0 -- bash -c "$SCRIPT"
+kubectl exec -n databases postgresql-0 -- bash -c "$SCRIPT"

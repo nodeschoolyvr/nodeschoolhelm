@@ -20,6 +20,9 @@ proxy:
     - "--no-include-prefix"
 
 hub:
+  db:
+    type: 'postgres'
+    url: 'postgresql+psycopg2://jupyterhub@postgresql.databases.svc.cluster.local:5432/jupyterhub'
   # The code-server needs different arguments
   # than the jupyter notebook image
   extraConfig:

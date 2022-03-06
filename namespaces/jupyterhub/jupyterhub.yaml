@@ -31,9 +31,6 @@ hub:
       oauth_callback_url: https://hub.do.nodeschoolyvr.com/hub/oauth_callback
     JupyterHub:
       authenticator_class: github
-  db:
-    type: 'postgres'
-    url: 'postgresql+psycopg2://jupyterhub@postgresql.databases.svc.cluster.local:5432/jupyterhub'
   # The code-server needs different arguments
   # than the jupyter notebook image
   extraConfig:

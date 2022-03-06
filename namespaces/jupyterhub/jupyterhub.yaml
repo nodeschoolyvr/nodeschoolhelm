@@ -19,7 +19,18 @@ proxy:
     extraCommandLineFlags:
     - "--no-include-prefix"
 
+auth:
+  admin:
+    users:
+      - halkeye
+      - qard
+      - nated0g
 hub:
+  config:
+    GitHubOAuthenticator:
+      oauth_callback_url: https://hub.do.nodeschoolyvr.com/hub/oauth_callback
+    JupyterHub:
+      authenticator_class: github
   db:
     type: 'postgres'
     url: 'postgresql+psycopg2://jupyterhub@postgresql.databases.svc.cluster.local:5432/jupyterhub'

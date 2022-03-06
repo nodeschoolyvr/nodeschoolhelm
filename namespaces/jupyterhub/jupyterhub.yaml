@@ -11,6 +11,8 @@ singleuser:
     homeMountPath: "/home/coder"
 
 proxy:
+  service:
+    type: ClusterIP
   chp:
     # Make sure the code server does never get to know about
     # the user-specific prefixes and thinks "it runs by itself"

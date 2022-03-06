@@ -2,7 +2,7 @@ singleuser:
   # Use the code-server image
   image:
     name: "codercom/code-server"
-    tag: "3.6.2"
+    tag: "4.1.0"
 
   # Mount the persistant volume claim
   # directly inside the home folder of

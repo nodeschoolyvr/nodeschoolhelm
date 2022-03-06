@@ -19,14 +19,14 @@ proxy:
     extraCommandLineFlags:
     - "--no-include-prefix"
 
-auth:
-  admin:
-    users:
-      - halkeye
-      - qard
-      - nated0g
 hub:
   config:
+    Authenticator:
+      auto_login: true
+      admin_users:
+        - halkeye
+        - qard
+        - nated0g
     GitHubOAuthenticator:
       oauth_callback_url: https://hub.do.nodeschoolyvr.com/hub/oauth_callback
     JupyterHub:

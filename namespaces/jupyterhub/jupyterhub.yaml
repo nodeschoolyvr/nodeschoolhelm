@@ -1,8 +1,8 @@
 singleuser:
   # Use the code-server image
   image:
-    name: "codercom/code-server"
-    tag: "4.1.0"
+    name: "nated0g/nodeschool-code-server"
+    tag: "latest"
 
   # Mount the persistant volume claim
   # directly inside the home folder of

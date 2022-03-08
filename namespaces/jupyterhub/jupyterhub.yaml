@@ -2,7 +2,7 @@ singleuser:
   # Use the code-server image
   image:
     name: "nated0g/nodeschool-code-server"
-    tag: "latest@sha256:f141dd86e9edc1feef3118cfd5c59cfce3af8f09e38ac8a4a449deb71851b6a2"
+    tag: "1.0.0@sha256:7829c7c1b5150fd3379063eb90825fc73fae68d1f8057bda3f54aa2c48fc44a2"
 
   # Mount the persistant volume claim
   # directly inside the home folder of
